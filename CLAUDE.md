@@ -36,15 +36,12 @@
 - G2.2 Fix the code, not the test. Never delete, skip or loosen tests, add
   suppressions or disable CI steps without asking.
 
-## G3 Root causes and scope
+## G3 Root causes
 
-<!-- Sources: https://github.com/obra/dotfiles/blob/main/.claude/CLAUDE.md ;
-     https://github.com/forrestchang/andrej-karpathy-skills/blob/main/CLAUDE.md (2026-10-23) -->
+<!-- Source: https://github.com/obra/dotfiles/blob/main/.claude/CLAUDE.md (2026-10-23) -->
 
 - G3.1 Fix root causes; never disable a feature instead of fixing it. If a fix
   fails twice, stop and tell me where your understanding was wrong.
-- G3.2 Make the smallest change that does the task; mention unrelated problems
-  instead of fixing them.
 
 ## G4 Dependencies
 
@@ -54,14 +51,11 @@
 - G4.1 Ask before adding dependencies or changing version constraints or
   lockfiles; prefer what the project already uses.
 
-## G5 Facts and research integrity
+## G5 Research integrity
 
-<!-- Sources: https://github.com/obra/dotfiles/blob/main/.claude/CLAUDE.md ;
-     G5.2 is an own rule (2026-10-23) -->
+<!-- Source: own rule (2026-10-23) -->
 
-- G5.1 Never invent APIs, options, citations, DOIs or versions; look them up
-  and give the URL, DOI or file path, or say you don't know.
-- G5.2 Never change seeds, input data or results to match expectations.
+- G5.1 Never change seeds, input data or results to match expectations.
 
 ## G6 AI attribution and licensing
 
