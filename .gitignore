@@ -1,0 +1,5 @@
+# Track only allow-listed files; ~/.claude also holds credentials, history and caches.
+*
+!.gitignore
+!CLAUDE.md
+!LICENSE
