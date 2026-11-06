@@ -67,3 +67,26 @@
 - G6.2 Never list the AI as an author in citation or package metadata.
 - G6.3 Flag large verbatim snippets and never copy code under an incompatible
   licence.
+
+## G7 Software metadata files
+
+<!-- Sources: https://codemeta.github.io/ ;
+     https://citation-file-format.github.io/ ;
+     https://ai-declaration.org/ (2026-11-06) -->
+
+- G7.1 Software projects carry these files in the repo root. If one is missing
+  or invalid, say so and propose adding it and its check (see G4.1).
+
+  | File            | Create / update                   | Validate                  |
+  |-----------------|-----------------------------------|---------------------------|
+  | `codemeta.json` | `codemetapy -O codemeta.json`, R: `codemetar::write_codemeta()` | Regenerate, diff: no drift |
+  | `CITATION.cff`  | R: `cffr::cff_write()`, or by hand | `cffconvert --validate`, R: `cffr::cff_validate()` |
+  | `aidecl.yaml`   | `aidecl init`, then edit          | `aidecl validate --strict aidecl.yaml` |
+
+- G7.2 The package manifest (`pyproject.toml`, `DESCRIPTION`, `package.json`)
+  is the source of truth. Generate the others from it with the tools above;
+  never hand-edit generated fields.
+- G7.3 Run the validations from the project's test suite (e.g. pytest,
+  testthat) so they also run in CI, and update the files with every release
+  or metadata change.
+- G7.4 `aidecl.yaml` declares AI use; it does not make the AI an author (G6.2).
