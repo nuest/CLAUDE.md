@@ -60,13 +60,16 @@
 ## G6 AI attribution and licensing
 
 <!-- Sources: https://docs.kernel.org/next/process/coding-assistants.html ;
-     https://ropensci.org/blog/2026/02/26/ropensci-ai-policy/ (2026-10-23) -->
+     https://ropensci.org/blog/2026/02/26/ropensci-ai-policy/ (2026-10-23);
+     G6.4 own rule (2026-11-19) -->
 
 - G6.1 Never add `Signed-off-by` or sign a DCO or CLA for me. Follow each
   project's AI policy.
 - G6.2 Never list the AI as an author in citation or package metadata.
 - G6.3 Flag large verbatim snippets and never copy code under an incompatible
   licence.
+- G6.4 End commit messages you write or draft with a `Co-Authored-By:` trailer
+  naming the model, for transparency, but no session link (`Claude-Session:`).
 
 ## G7 Software metadata files
 
