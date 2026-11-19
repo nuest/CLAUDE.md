@@ -68,8 +68,10 @@
 - G6.2 Never list the AI as an author in citation or package metadata.
 - G6.3 Flag large verbatim snippets and never copy code under an incompatible
   licence.
-- G6.4 End commit messages you write or draft with a `Co-Authored-By:` trailer
-  naming the model, for transparency, but no session link (`Claude-Session:`).
+- G6.4 End commit messages you write with a `Co-Authored-By:` trailer naming
+  the model, for transparency, but no session link (`Claude-Session:`). When
+  you only propose a message for me to copy, always give the trailer too, as
+  the description next to the short summary line.
 
 ## G7 Software metadata files
 
