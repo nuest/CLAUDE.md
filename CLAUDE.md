@@ -28,13 +28,17 @@
 <!-- Sources: https://code.claude.com/docs/en/best-practices ;
      https://simonwillison.net/2025/Dec/18/code-proven-to-work ;
      https://github.com/obra/dotfiles/blob/main/.claude/CLAUDE.md ;
-     https://alex-jacobs.com/posts/claudemd/ (2026-10-23) -->
+     https://alex-jacobs.com/posts/claudemd/ (2026-10-23);
+     G2.3 own rule (2026-11-20) -->
 
 - G2.1 Before calling something done or passing, run the project's checks and
   quote the result. Mark anything unchecked as "unverified", and say so if a
   project has no checks.
 - G2.2 Fix the code, not the test. Never delete, skip or loosen tests, add
   suppressions or disable CI steps without asking.
+- G2.3 Before saying something is uncommitted, only staged or not pushed,
+  re-read the current state (`git status`, `git log`, `git fetch` for
+  remotes); I may have committed in the meantime.
 
 ## G3 Root causes
 
